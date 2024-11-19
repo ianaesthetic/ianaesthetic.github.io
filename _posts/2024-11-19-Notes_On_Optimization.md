@@ -8,14 +8,6 @@ Similarly, we can define the Lipschitz-continuous for the gradient of $f$. Furth
 
 
 
-
-
-Lemma: 
-
-$$$$
-
-
-
 <details>Small techniques: consider $f(x): \mathbb{R} \to \mathbb{R}$, then we have:
 
 $$\begin{aligned} f(y) - f(x) &= \int_x^y f'(t)dt \\  & =\int_0^1 f'((y-x)u + x)d((y-x)u) + x) \\ &= \int_0^1 f'((y-x)u + x)(y-x)du \end{aligned}$$
@@ -37,4 +29,25 @@ $$\begin{aligned} f(y) - f(x) &= \int_x^y f'(t)dt \\  & =\int_0^1 f'((y-x)u + x)
 
 Therefore for the $\mathbb{R}^n$ case, we have : 
 
-$$\begin{aligned}f(y) = f(x) + \int_0^1 \langle f'(x + \tau(y-x)), y-x \rangle d\tau \\ &= \end{aligned}$$
+$$\begin{aligned}f(y) &= f(x) + \int_0^1 \langle f'(x + \tau(y-x)), y-x \rangle d\tau \\ &= f(x) + \langle f'(x), y - x\rangle + \int_0^1 \langle f'(x + \tau(y-x)) - f'(x), y-x \rangle d\tau \end{aligned}$$
+
+$$\begin{aligned} \vert f(y) - f(x) - \langle f'(x), y-x\rangle \vert&= \bigg |\int_0^1  \langle f'(x + \tau(y-x)) - f'(x), y-x \rangle d\tau \bigg | \\ &\leq \int_0^1 \vert \langle f'(x + \tau(y-x)) - f'(x), y-x \rangle\vert d\tau \\ &\overset{(a)}{\leq} \int_0^1\vert\vert f'(x + \tau(y-x)) - f'(x)\vert\vert\cdot \vert\vert y-x\vert\vert d\tau \\ &= \int_0^1L\vert\vert y - x\vert\vert\end{aligned}$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
