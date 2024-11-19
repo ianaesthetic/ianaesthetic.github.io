@@ -23,7 +23,7 @@ $$\begin{aligned} f(y) & \leq f(x) + \langle f'(x), y-x\rangle +  \frac{L}{2}||x
 Intuitively, as the change of the gradient is upper bounded by the changes of variable, the accumulated change of function value is upper bounded by the square of variable changes during integral. In the detailed proof, the derivation relies on expanding the difference between $f(y)$ and $f(x)$ and write it as the integral of the difference between derivatives.  
 
 <details>
-    <summary> Proof</\summary>
+    <summary> Proof<\summary>
 First we need to write the difference between function value as the integral of derivative. We first consider the simplest case, where $f(x): \mathbb{R} \to \mathbb{R}$. Then we have:
 
 
