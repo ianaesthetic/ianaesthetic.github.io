@@ -1,6 +1,6 @@
 ---
 math: true
-media_subpath: /posts/
+media_subpath: /_posts/
 ---
 
 
