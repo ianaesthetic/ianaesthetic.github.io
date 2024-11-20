@@ -1,6 +1,6 @@
 ---
 math: true
-media_subpath: _site/assets/pic/
+media_subpath: assets/pic/
 ---
 
 
@@ -25,7 +25,7 @@ $$\begin{aligned} & x_{k+1} = \arg\min_y f(x_k) + \langle \nabla f(x_k), y - x_k
 
 
 
-![image-20241120124906937](image-20241120124906937.png)
+![image-20241120124906937](a.png)
 
 _Lipschitz-continuous and gradient descent_
 
