@@ -1,6 +1,6 @@
 ---
 math: true
-media_subpath: assets/pic/
+media_subpath: /assets/pic/
 ---
 
 
