@@ -1,6 +1,6 @@
 ---
 math: true
-media_subpath: _site/_posts/
+media_subpath: ./assets/pic/
 ---
 
 
@@ -23,7 +23,9 @@ Intuitively, the means that **value function $f$ can be upper and lower bounded 
 
 $$\begin{aligned} & x_{k+1} = \arg\min_y f(x_k) + \langle \nabla f(x_k), y - x_k\rangle + \frac{L}{2}||x_k - y||^2  \\ & f(x_{k+1})  \leq  f(x_k) + \langle \nabla f(x_k), x_{k+1} - x_k\rangle + \frac{L}{2}||x_k - x_{k+1}||^2 \leq  f(x_{k+1}) - \frac{L}{2}||\nabla f(x_k)||^2\end{aligned} $$
 
-![image-20241120124906937](assets/image-20241120124906937.png)
+
+
+![image-20241120124906937](image-20241120124906937.png)
 
 _Lipschitz-continuous and gradient descent_
 
