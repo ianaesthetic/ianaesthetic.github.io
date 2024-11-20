@@ -19,13 +19,13 @@ Obviously, we can further conclude the following inequality.
 
 $$\begin{aligned} f(y) & \leq f(x) + \langle \nabla f(x), y-x\rangle +  \frac{L}{2}||x-y||^2 \\  f(y) & \geq f(x) + \langle \nabla f(x), y-x\rangle -  \frac{L}{2}||x-y||^2\end{aligned}$$
 
-Intuitively, the means that **value function $f$ can be upper and lower bounded by the second-order approximation in $x$ ** . This gives us many merits in convergence analysis. For example, in gradient descent, one can choose the next $x_{k+1}$ that minimizes the second-order upper bound. As a result, we have the following inequality to show that the update is a least . In the gradient ascent case, we choose the lower bound to achieve similar results. 
+Intuitively, the means that **value function $f$ can be upper and lower bounded by the second-order approximation in** $x$  . This gives us many merits in convergence analysis. For example, in gradient descent, one can choose the next $x_{k+1}$ that minimizes the second-order upper bound. As a result, we have the following inequality to show that the update is a least . In the gradient ascent case, we choose the lower bound to achieve similar results. 
 
 $$\begin{aligned} & x_{k+1} = \arg\min_y f(x_k) + \langle \nabla f(x_k), y - x_k\rangle + \frac{L}{2}||x_k - y||^2  \\ & f(x_{k+1})  \leq  f(x_k) + \langle \nabla f(x_k), x_{k+1} - x_k\rangle + \frac{L}{2}||x_k - x_{k+1}||^2 \leq  f(x_{k+1}) - \frac{L}{2}||\nabla f(x_k)||^2\end{aligned} $$
 
 
 
-![image-20241120124906937](a.png)
+![image-20241120124906937](image-20241120124906937.png)
 
 _Lipschitz-continuous and gradient descent_
 
